@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul,
+ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+.lunbo{
+	font-size: 0;
+	text-align: center;
+	margin-top: 20px;
+}
+.lunbo-inner{
+	position: relative;
+	display: inline-block;
+}
+.lunbo-indicators{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.lunbo-indicators li{
+	list-style-type: none;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	vertical-align: bottom;
+	margin: 0 5px;
+	cursor: pointer;
+}
+.lunbo-indicators li.active{
+	background: #fff;
+}
+.lunbo-item{
+}
+
+.lunbo-control{
+	position: absolute;
+	width: 15%;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	opacity: .5;
+	cursor: pointer;
+}
+.lunbo-control:hover{
+	opacity: 1;
+}
+.lunbo-control.left{
+	left: 0;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+
+}
+.lunbo-control.right{
+	right: 0;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+
+}
+.lunbo-control .arrow{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #eee;
+	font-size: 30px;
+	width: 30px;
+	height: 30px;
+	
+}
